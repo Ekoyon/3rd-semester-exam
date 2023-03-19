@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - repoURL: https://github.com/ekoyon/exam_apps.git
+  - repoURL: https://github.com/ekoyon/3rd-semester-exam.git
     targetRevision: HEAD
     ref: ekoyon
   - repoURL: https://grafana.github.io/helm-charts
@@ -20,7 +20,7 @@ spec:
     targetRevision: 6.52.2
     helm:
       valueFiles:
-        - $ekoyon/ekoyon_apps/values/grafana.yaml         
+        - $ekoyon/exam_apps/values/grafana.yaml         
   syncPolicy:
     automated:
       prune: true
