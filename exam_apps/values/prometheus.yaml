@@ -1,0 +1,4 @@
+#Prometheus
+server:
+  service:
+    type: LoadBalancer
