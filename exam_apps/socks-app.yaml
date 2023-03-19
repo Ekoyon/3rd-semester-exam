@@ -12,9 +12,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - repoURL: https://github.com/starburn-hub/final-exam.git
+  - repoURL: https://github.com/Ekoyon/3rd-semester-exam.git
     targetRevision: main
-    path: argocd_apps_2    
+    path: exam_apps/values/    
   syncPolicy:
     automated:
       prune: true
