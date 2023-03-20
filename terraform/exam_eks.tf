@@ -5,7 +5,6 @@ module "eks" {
   cluster_name                   = "exam_eks_cluster"
   cluster_version                = "1.25"
   cluster_endpoint_public_access = true
-  # cluster_auth_token = data.aws_eks_cluster_auth.cluster_auth.token
   # EKS Cluster Addons
   cluster_addons = {
     coredns = {
@@ -31,7 +30,7 @@ module "eks" {
 
   # Using EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
-    instance_types = ["t2.medium", "t2.medium"]
+    instance_types = ["t2.medium", "t3.medium"]
     disk_size      = 50
   }
 
@@ -42,7 +41,7 @@ module "eks" {
       max_size     = 4
       desired_size = 2
 
-      instance_types = ["t2.medium", "t2.medium", "t2.medium"]
+      instance_types = ["t2.medium", "t3.medium", "t2.medium"]
       capacity_type  = "ON_DEMAND"
     }
   }
@@ -82,16 +81,6 @@ module "eks" {
     Terraform   = "true"
   }
 
-    #node_security_group_additional_rules = {
-     # ingress_allow_access_from_control_plane = {
-      #  type                          = "ingress"
-       # protocol                      = "tcp"
-        #from_port                     = 443
-        #to_port                       = 443
-        #source_cluster_security_group = true
-        #description                   = "Allow access from control plane to webhook port of AWS load balancer controller"
-      #}
-    #}
 
 }
 
