@@ -25,6 +25,7 @@ aws configure
 
 ### Terraform
 - Open a text editor and create a directory (folder). In the directory, create a provider.tf file; mine looks like this:
+
 ![provider.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/provider.tf.png) 
 
 - Create an S3 bucket to store the state file. Doing this allows for sharing when working with a team.
@@ -33,16 +34,23 @@ The script is created in a "backend.tf" file.
 ![backend.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/backend.tf.png),
 
 - Create scripts that provisions vpc, subnets, internet gateways, security groups etc
+
 ![vpc.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/vpc.tf.png)
 
 - The next script creates the EKS cluster and IAM roles and their policies. The role allows the cluster to access other AWS resources. My "eks.tf" file looks like this:
+
 ![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks.tf.png),
+
 ![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks2.tf.png),
+
 ![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks3.tf.png),
 
 - Create a "variable.tf" file, "output.tf" and "local.tf" files to house variables and expeced outputs
+
 ![variable.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/variabler.tf.png),
+
 ![outputs.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/outputs.tf.png)
+
 ![locals.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/locals.tf.png)
 
 ### TERMINAL
