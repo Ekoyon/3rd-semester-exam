@@ -29,18 +29,19 @@ aws configure
 
 - Create an S3 bucket to store the state file. Doing this allows for sharing when working with a team.
 The script is created in a "backend.tf" file.
-![backend.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/backend.tf.png)
+
+![backend.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/backend.tf.png),
 
 - Create scripts that provisions vpc, subnets, internet gateways, security groups etc
 ![vpc.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/vpc.tf.png)
 
 - The next script creates the EKS cluster and IAM roles and their policies. The role allows the cluster to access other AWS resources. My "eks.tf" file looks like this:
-![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks.tf.png)
-![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks2.tf.png)
-![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks3.tf.png)
+![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks.tf.png),
+![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks2.tf.png),
+![eks.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/eks3.tf.png),
 
 - Create a "variable.tf" file, "output.tf" and "local.tf" files to house variables and expeced outputs
-![variable.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/variabler.tf.png)
+![variable.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/variabler.tf.png),
 ![outputs.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/outputs.tf.png)
 ![locals.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/locals.tf.png)
 
@@ -79,7 +80,7 @@ kubectl get secret argocd-initial-admin-secret -o jsonpath"{.data.password}" |ba
 the link to your external ip is copied after running: kubectl get -svc -n argocd and run in a browser
 login to argocd
 
-![argocd login page](https://github.com/Ekoyon/3rd-semester-exam/blob/main/argocd.ekoyon.me .jpg)
+![argocd login page](https://github.com/Ekoyon/3rd-semester-exam/blob/main/argocd.ekoyon.me%20.jpg)
 
 Use loadbalancer to login to the argocd application
 
@@ -106,13 +107,13 @@ Use loadbalancer to login to the argocd application
 the apps are in the repo specified so we clickon "sync"
 
 base app (app of choice)
-![pretty web app](https://github.com/Ekoyon/3rd-semester-exam/blob/main/motion.ekoyon.me .jpg)
+![pretty web app](https://github.com/Ekoyon/3rd-semester-exam/blob/main/motion.ekoyon.me%20.jpg)
 
 prometheus:
-![prometheus page](https://github.com/Ekoyon/3rd-semester-exam/blob/main/prometheus.ekoyon.me .jpg)
+![prometheus page](https://github.com/Ekoyon/3rd-semester-exam/blob/main/prometheus.ekoyon.me%20.jpg)
 
 grafana
-![grafana page](https://github.com/Ekoyon/3rd-semester-exam/blob/main/grafana.ekoyon.me .jpg)
+![grafana page](https://github.com/Ekoyon/3rd-semester-exam/blob/main/grafana.ekoyon.me%20.jpg)
 
 
 #### reference: https://faun.pub/continous-deployments-of-kubernetes-applications-using-ago-cd-gitops-helm-charts-9df917caa2e4
