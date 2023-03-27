@@ -47,7 +47,7 @@ The script is created in a "backend.tf" file.
 
 - Create a "variable.tf" file, "output.tf" and "local.tf" files to house variables and expeced outputs
 
-![variable.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/variabler.tf.png)
+![variable.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/variables.tf.png)
 
 ![outputs.tf](https://github.com/Ekoyon/3rd-semester-exam/blob/main/outputs.tf.png)
 
